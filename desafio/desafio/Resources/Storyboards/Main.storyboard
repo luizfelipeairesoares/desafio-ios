@@ -14,7 +14,7 @@
         <scene sceneID="4HS-nJ-DLh">
             <objects>
                 <navigationController id="YYf-1x-gRl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EeS-i2-OT4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EeS-i2-OT4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,7 +52,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bcz-jM-lTc" id="xEE-0i-OHx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Nome repositório" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-sv-71A">
@@ -242,7 +242,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ACB-Dp-kE5" id="fcv-qg-0xs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Nome repositório" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-Cc-8dJ">
@@ -338,6 +338,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTW-h9-fXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="693.60000000000002" y="91.304347826086968"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Tg3-sr-LBe">
+            <objects>
+                <viewController storyboardIdentifier="WebViewControllerStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="8bt-qQ-BQd" customClass="WebViewController" customModule="desafio" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wZy-n0-pqg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xgq-H6-5YI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="plL-DB-D9E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-Fc-cdw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8bt-qQ-BQd" id="22s-xi-prJ"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xgq-H6-5YI" firstAttribute="top" secondItem="bGa-Fc-cdw" secondAttribute="bottom" id="CKV-BZ-2DJ"/>
+                            <constraint firstAttribute="trailing" secondItem="bGa-Fc-cdw" secondAttribute="trailing" id="CP1-1E-gzV"/>
+                            <constraint firstItem="bGa-Fc-cdw" firstAttribute="top" secondItem="wZy-n0-pqg" secondAttribute="bottom" id="MTT-lX-A9Y"/>
+                            <constraint firstItem="bGa-Fc-cdw" firstAttribute="leading" secondItem="plL-DB-D9E" secondAttribute="leading" id="oPC-Hc-ziO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="bGa-Fc-cdw" id="N7N-tk-hWj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8e-ny-6q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1431" y="90"/>
         </scene>
     </scenes>
     <resources>
