@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		2965C46845A07744FF4ED0BC /* Pods_desafioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B48E6FF1C271A2883CF0DC /* Pods_desafioTests.framework */; };
+		554A51FE1E425CA500BF057B /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A51FD1E425CA500BF057B /* GithubAPI.swift */; };
+		554A52011E425CC200BF057B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52001E425CC200BF057B /* Result.swift */; };
+		554A52041E425CFC00BF057B /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52031E425CFC00BF057B /* SearchService.swift */; };
+		554A52071E42609700BF057B /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52061E42609700BF057B /* RepositoryEntity.swift */; };
+		554A520A1E42633100BF057B /* OwnerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52091E42633100BF057B /* OwnerEntity.swift */; };
+		554A520D1E42645300BF057B /* BaseContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A520C1E42645300BF057B /* BaseContainers.swift */; };
+		554A52121E42661B00BF057B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52111E42661B00BF057B /* Protocols.swift */; };
+		554A52141E42690100BF057B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52131E42690100BF057B /* UIViewExtension.swift */; };
+		554A521A1E426A5B00BF057B /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52191E426A5B00BF057B /* RepositoryTableViewCell.swift */; };
+		554A521D1E426A6400BF057B /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A521B1E426A6400BF057B /* RepositoryListViewController.swift */; };
+		554A521E1E426A6400BF057B /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A521C1E426A6400BF057B /* RepositoryViewModel.swift */; };
+		554A52211E429D3700BF057B /* PullRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52201E429D3700BF057B /* PullRequestEntity.swift */; };
+		554A52251E429DE800BF057B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52241E429DE800BF057B /* UserEntity.swift */; };
+		554A52271E42A74800BF057B /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52261E42A74800BF057B /* PullRequestViewController.swift */; };
+		554A52291E42A7F400BF057B /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52281E42A7F400BF057B /* PullRequestTableViewCell.swift */; };
 		55F5EBCA1E4224BC007A532F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBC91E4224BC007A532F /* AppDelegate.swift */; };
 		55F5EBDF1E4224BD007A532F /* desafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBDE1E4224BD007A532F /* desafioTests.swift */; };
 		55F5EBEA1E4224BD007A532F /* desafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBE91E4224BD007A532F /* desafioUITests.swift */; };
@@ -41,6 +56,21 @@
 		19B48E6FF1C271A2883CF0DC /* Pods_desafioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DE1F2593B64EC2616DC157 /* Pods-desafioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafioUITests/Pods-desafioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3ADD10C608052D1FECAB65B6 /* Pods-desafio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafio/Pods-desafio.debug.xcconfig"; sourceTree = "<group>"; };
+		554A51FD1E425CA500BF057B /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		554A52001E425CC200BF057B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		554A52031E425CFC00BF057B /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		554A52061E42609700BF057B /* RepositoryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		554A52091E42633100BF057B /* OwnerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerEntity.swift; sourceTree = "<group>"; };
+		554A520C1E42645300BF057B /* BaseContainers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContainers.swift; sourceTree = "<group>"; };
+		554A52111E42661B00BF057B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		554A52131E42690100BF057B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		554A52191E426A5B00BF057B /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		554A521B1E426A6400BF057B /* RepositoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
+		554A521C1E426A6400BF057B /* RepositoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
+		554A52201E429D3700BF057B /* PullRequestEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestEntity.swift; sourceTree = "<group>"; };
+		554A52241E429DE800BF057B /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		554A52261E42A74800BF057B /* PullRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
+		554A52281E42A7F400BF057B /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestTableViewCell.swift; sourceTree = "<group>"; };
 		55F5EBC61E4224BC007A532F /* desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F5EBC91E4224BC007A532F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F5EBDA1E4224BD007A532F /* desafioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +131,82 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		554A51FF1E425CB300BF057B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				554A52001E425CC200BF057B /* Result.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		554A52021E425CEA00BF057B /* SearchService */ = {
+			isa = PBXGroup;
+			children = (
+				554A52031E425CFC00BF057B /* SearchService.swift */,
+			);
+			path = SearchService;
+			sourceTree = "<group>";
+		};
+		554A52051E42603300BF057B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				554A52061E42609700BF057B /* RepositoryEntity.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		554A52081E42632100BF057B /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				554A52091E42633100BF057B /* OwnerEntity.swift */,
+			);
+			path = Owner;
+			sourceTree = "<group>";
+		};
+		554A520B1E42644000BF057B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				554A520C1E42645300BF057B /* BaseContainers.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		554A52171E426A3000BF057B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				554A52181E426A5200BF057B /* Views */,
+				554A521B1E426A6400BF057B /* RepositoryListViewController.swift */,
+				554A52261E42A74800BF057B /* PullRequestViewController.swift */,
+				554A521C1E426A6400BF057B /* RepositoryViewModel.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		554A52181E426A5200BF057B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				554A52191E426A5B00BF057B /* RepositoryTableViewCell.swift */,
+				554A52281E42A7F400BF057B /* PullRequestTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		554A521F1E429D1500BF057B /* PullRequest */ = {
+			isa = PBXGroup;
+			children = (
+				554A52201E429D3700BF057B /* PullRequestEntity.swift */,
+			);
+			path = PullRequest;
+			sourceTree = "<group>";
+		};
+		554A52221E429DBA00BF057B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				554A52241E429DE800BF057B /* UserEntity.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		55F5EBBD1E4224BC007A532F = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +265,7 @@
 		55F5EBF71E4224DF007A532F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				554A52171E426A3000BF057B /* Repository */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +307,9 @@
 		55F5EBFC1E422525007A532F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				554A52021E425CEA00BF057B /* SearchService */,
+				554A51FF1E425CB300BF057B /* Base */,
+				554A51FD1E425CA500BF057B /* GithubAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -207,6 +317,11 @@
 		55F5EBFD1E422533007A532F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				554A520B1E42644000BF057B /* Base */,
+				554A52081E42632100BF057B /* Owner */,
+				554A52051E42603300BF057B /* Repository */,
+				554A521F1E429D1500BF057B /* PullRequest */,
+				554A52221E429DBA00BF057B /* User */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +329,8 @@
 		55F5EBFE1E422542007A532F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				554A52111E42661B00BF057B /* Protocols.swift */,
+				554A52131E42690100BF057B /* UIViewExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -529,6 +646,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554A520D1E42645300BF057B /* BaseContainers.swift in Sources */,
+				554A52141E42690100BF057B /* UIViewExtension.swift in Sources */,
+				554A52291E42A7F400BF057B /* PullRequestTableViewCell.swift in Sources */,
+				554A51FE1E425CA500BF057B /* GithubAPI.swift in Sources */,
+				554A521A1E426A5B00BF057B /* RepositoryTableViewCell.swift in Sources */,
+				554A52271E42A74800BF057B /* PullRequestViewController.swift in Sources */,
+				554A52071E42609700BF057B /* RepositoryEntity.swift in Sources */,
+				554A52121E42661B00BF057B /* Protocols.swift in Sources */,
+				554A52211E429D3700BF057B /* PullRequestEntity.swift in Sources */,
+				554A520A1E42633100BF057B /* OwnerEntity.swift in Sources */,
+				554A52041E425CFC00BF057B /* SearchService.swift in Sources */,
+				554A521E1E426A6400BF057B /* RepositoryViewModel.swift in Sources */,
+				554A52011E425CC200BF057B /* Result.swift in Sources */,
+				554A52251E429DE800BF057B /* UserEntity.swift in Sources */,
+				554A521D1E426A6400BF057B /* RepositoryListViewController.swift in Sources */,
 				55F5EBCA1E4224BC007A532F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,6 +903,7 @@
 				55F5EBF01E4224BD007A532F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F5EBF11E4224BD007A532F /* Build configuration list for PBXNativeTarget "desafioTests" */ = {
 			isa = XCConfigurationList;
@@ -779,6 +912,7 @@
 				55F5EBF31E4224BD007A532F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F5EBF41E4224BD007A532F /* Build configuration list for PBXNativeTarget "desafioUITests" */ = {
 			isa = XCConfigurationList;
@@ -787,6 +921,7 @@
 				55F5EBF61E4224BD007A532F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
