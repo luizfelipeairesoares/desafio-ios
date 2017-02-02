@@ -385,6 +385,7 @@
 				55F5EBC41E4224BC007A532F /* Resources */,
 				C4275D3D9706FA8906337863 /* [CP] Embed Pods Frameworks */,
 				CC220E2A5420E9AAC607E64C /* [CP] Copy Pods Resources */,
+				55CC0AD81E437FDD0033CBBF /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -559,6 +560,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafioTests/Pods-desafioTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		55CC0AD81E437FDD0033CBBF /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" fd352ed76f01deb9b11fb25ec81afa881902ea7f 7c647e77e6ca00da3ccc424d92f1178bdd9a3400b16c1e9a20147ee24d11ec32";
 		};
 		7F06F513DB14FCFC34BAF5E8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

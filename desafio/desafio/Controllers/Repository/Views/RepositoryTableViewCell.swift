@@ -66,6 +66,7 @@ extension RepositoryTableViewCell: CellProtocol {
                 self.lblStarCount.text = "0"
             }
             self.lblUsername.text = repository.owner?.login
+            self.lblFullname.text = repository.fullName
         }
     }
     

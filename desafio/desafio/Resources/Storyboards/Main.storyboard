@@ -106,14 +106,14 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9M-Rk-Yhk">
-                                                            <rect key="frame" x="4" y="52" width="89" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9M-Rk-Yhk">
+                                                            <rect key="frame" x="4" y="48" width="89" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" red="0.28627450980000002" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Sobrenome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-T8-dtC">
-                                                            <rect key="frame" x="3" y="70" width="90" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome Sobrenome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-T8-dtC">
+                                                            <rect key="frame" x="3" y="64" width="90" height="34"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -122,12 +122,13 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="ab5-T8-dtC" firstAttribute="centerX" secondItem="0kx-so-g8R" secondAttribute="centerX" id="POa-LM-UaL"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ab5-T8-dtC" secondAttribute="bottom" id="SA2-E1-Dt8"/>
                                                         <constraint firstAttribute="width" constant="97" id="WnM-fc-nA1"/>
                                                         <constraint firstAttribute="trailing" secondItem="E9M-Rk-Yhk" secondAttribute="trailing" constant="4" id="Z0K-Z1-9yO"/>
                                                         <constraint firstAttribute="trailing" secondItem="ab5-T8-dtC" secondAttribute="trailing" constant="4" id="coT-Dz-7cj"/>
-                                                        <constraint firstItem="ab5-T8-dtC" firstAttribute="top" secondItem="E9M-Rk-Yhk" secondAttribute="bottom" constant="2" id="hIi-Nd-dZo"/>
+                                                        <constraint firstItem="ab5-T8-dtC" firstAttribute="top" secondItem="E9M-Rk-Yhk" secondAttribute="bottom" id="hIi-Nd-dZo"/>
                                                         <constraint firstItem="0kx-so-g8R" firstAttribute="top" secondItem="hpc-CP-0Vk" secondAttribute="top" constant="4" id="oHa-cr-apA"/>
-                                                        <constraint firstItem="E9M-Rk-Yhk" firstAttribute="top" secondItem="0kx-so-g8R" secondAttribute="bottom" constant="8" id="qNp-8R-yt1"/>
+                                                        <constraint firstItem="E9M-Rk-Yhk" firstAttribute="top" secondItem="0kx-so-g8R" secondAttribute="bottom" constant="4" id="qNp-8R-yt1"/>
                                                         <constraint firstItem="0kx-so-g8R" firstAttribute="centerX" secondItem="hpc-CP-0Vk" secondAttribute="centerX" id="qwe-sZ-IiR"/>
                                                         <constraint firstItem="E9M-Rk-Yhk" firstAttribute="centerX" secondItem="0kx-so-g8R" secondAttribute="centerX" id="v6L-Xz-boX"/>
                                                     </constraints>
