@@ -23,6 +23,7 @@
 		554A52251E429DE800BF057B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52241E429DE800BF057B /* UserEntity.swift */; };
 		554A52271E42A74800BF057B /* PullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52261E42A74800BF057B /* PullRequestViewController.swift */; };
 		554A52291E42A7F400BF057B /* PullRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A52281E42A7F400BF057B /* PullRequestTableViewCell.swift */; };
+		55DCBC731E42C4FC00BAC648 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DCBC721E42C4FC00BAC648 /* WebViewController.swift */; };
 		55F5EBCA1E4224BC007A532F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBC91E4224BC007A532F /* AppDelegate.swift */; };
 		55F5EBDF1E4224BD007A532F /* desafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBDE1E4224BD007A532F /* desafioTests.swift */; };
 		55F5EBEA1E4224BD007A532F /* desafioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5EBE91E4224BD007A532F /* desafioUITests.swift */; };
@@ -71,6 +72,7 @@
 		554A52241E429DE800BF057B /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		554A52261E42A74800BF057B /* PullRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestViewController.swift; sourceTree = "<group>"; };
 		554A52281E42A7F400BF057B /* PullRequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequestTableViewCell.swift; sourceTree = "<group>"; };
+		55DCBC721E42C4FC00BAC648 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		55F5EBC61E4224BC007A532F /* desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F5EBC91E4224BC007A532F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F5EBDA1E4224BD007A532F /* desafioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,14 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		55DCBC711E42C4E600BAC648 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				55DCBC721E42C4FC00BAC648 /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		55F5EBBD1E4224BC007A532F = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +275,7 @@
 		55F5EBF71E4224DF007A532F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55DCBC711E42C4E600BAC648 /* Web */,
 				554A52171E426A3000BF057B /* Repository */,
 			);
 			path = Controllers;
@@ -658,6 +669,7 @@
 				554A520A1E42633100BF057B /* OwnerEntity.swift in Sources */,
 				554A52041E425CFC00BF057B /* SearchService.swift in Sources */,
 				554A521E1E426A6400BF057B /* RepositoryViewModel.swift in Sources */,
+				55DCBC731E42C4FC00BAC648 /* WebViewController.swift in Sources */,
 				554A52011E425CC200BF057B /* Result.swift in Sources */,
 				554A52251E429DE800BF057B /* UserEntity.swift in Sources */,
 				554A521D1E426A6400BF057B /* RepositoryListViewController.swift in Sources */,
