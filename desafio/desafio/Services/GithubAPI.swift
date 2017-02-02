@@ -50,10 +50,23 @@ extension GithubAPI: TargetType {
     }
     
     public var sampleData: Data {
-        return Data()
+        switch self {
+        case .searchRepositories(_, _, _):
+            return stubbedResponse("stub_search_repositories")
+        default:
+            return stubbedResponse("stub_pull_requests")
+        }
     }
     
     public var task: Task {
         return .request
     }
+}
+
+func stubbedResponse(_ filename: String) -> Data! {
+    @objc class TestClass: NSObject { }
+    
+    let bundle = Bundle(for: TestClass.self)
+    let path = bundle.path(forResource: filename, ofType: "json")
+    return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
 }
