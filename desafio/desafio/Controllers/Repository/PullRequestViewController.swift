@@ -24,17 +24,17 @@ class PullRequestViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.tableView.tableFooterView = UIView(frame: .zero)
         self.lblOpenClose.isHidden = true
+        self.tableView.isHidden = true
+        self.viewModel?.requestPulls()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.tableView.isHidden = true
         self.title = self.viewModel?.currentRepository?.name
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.viewModel?.requestPulls()
         if let open = self.viewModel?.currentRepository?.openIssues {
             self.lblOpenClose.text = "\(open) open issues"
             self.lblOpenClose.isHidden = false
@@ -43,7 +43,6 @@ class PullRequestViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.viewModel?.currentRepository = nil
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,7 +73,7 @@ class PullRequestViewController: UIViewController {
 extension PullRequestViewController: RepositoryProtocol {
     
     func reloadTable() {
-        if self.viewModel?.prs.count == 0 {
+        if let count = self.viewModel?.prs.count, count > 0 {
             self.tableView.reloadData()
             self.tableView.isHidden = false
         } else {
@@ -110,6 +109,23 @@ extension PullRequestViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let sheet = UIAlertController(title: nil, message: "Where do you wanna open?", preferredStyle: .actionSheet)
+        sheet.addAction(UIAlertAction(title: "Safari", style: .default, handler: { [unowned self] (action) in
+            let pr = self.viewModel?.prs[indexPath.row]
+            if let url = pr?.url {
+                UIApplication.shared.openURL(url)
+            }
+        }))
+        sheet.addAction(UIAlertAction(title: "In app", style: .default, handler: { [unowned self] (action) in
+            let pr = self.viewModel?.prs[indexPath.row]
+            if let url = pr?.url {
+                let web = self.storyboard?.instantiateViewController(withIdentifier: WebViewController.storyboardID()) as! WebViewController
+                web.assignURL(url: url)
+                self.navigationController?.pushViewController(web, animated: true)
+            }
+        }))
+        sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(sheet, animated: true, completion: nil)
     }
     
 }
